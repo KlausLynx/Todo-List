@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <figure>
+
+    </figure>
+  </header>
+  <main>
+    <div class="container">
+      <div class="cont">
+        <div class="cont_header">
+          <div class="title">
+            <div class="title_left">
+              <h1>Todo</h1>
+            </div>
+            <div class="title_right">
+              <img src="icon-sun.svg" alt="sun-icon" id ="season">
+            </div>
+          </div>
+        </div>
+        <div class="actives">
+          <input id="checks" type="checkbox" class="circle-checks">
+          <input id="userinput" class="value" type="text" placeholder="Create a New Todo...">
+        </div>
+        <div class="lists" id="lists">
+          <div class="uls" onmouseover="showCross(this)" onmouseout="hideCross(this)" id="uls1" draggable="true" ondragstart="dragStart(event)">
+            <input type="checkbox" class="circle-checkbox" id="input_1">
+            <ul class="left circle-checkbox-container">
+              <li id="check_1">Complete online javascript course</li>
+            </ul>
+            <div>
+              <img src="icon-cross.svg" alt="cross-icon" class="cross" id="cross1">
+            </div>
+          </div>
+          <div class="uls" onmouseover="showCross(this)" onmouseout="hideCross(this)" id="uls2" draggable="true" ondragstart="dragStart(event)">
+            <input type="checkbox" class="circle-checkbox" id="input_2">
+            <ul class="left circle-checkbox-container"> 
+              <li id="check_2">Jog around the park 3x</li>
+            </ul>
+            <div>
+              <img src="icon-cross.svg" alt="cross-icon" class="cross" id="cross2">
+            </div>
+          </div>
+          <div class="uls" onmouseover="showCross(this)" onmouseout="hideCross(this)" id="uls3" draggable="true" ondragstart="dragStart(event)">
+            <input type="checkbox" class="circle-checkbox" id="input_3" >
+            <ul class="left circle-checkbox-container">
+              <li id="check_3">10 minutes meditation</li>
+            </ul>
+            <div>
+              <img src="icon-cross.svg" alt="cross-icon" class="cross" id="cross3">
+            </div>
+          </div>
+          <div class="uls" onmouseover="showCross(this)" onmouseout="hideCross(this)" id="uls4" draggable="true" ondragstart="dragStart(event)">
+            <input type="checkbox" class="circle-checkbox" id="input_4">
+            <ul class="left circle-checkbox-container">
+              <li id="check_4">Read for 1 hour</li>
+            </ul>
+            <div>
+              <img src="icon-cross.svg" alt="cross-icon" class="cross" id="cross4">
+            </div>
+          </div>
+          <div class="uls" onmouseover="showCross(this)" onmouseout="hideCross(this)" id="uls5" draggable="true" ondragstart="dragStart(event)">
+            <input type="checkbox" class="circle-checkbox" id="input_5">
+            <ul class="left circle-checkbox-container">
+              <li id="check_5">Pick up groceries</li>
+            </ul>
+            <div>
+              <img src="icon-cross.svg" alt="cross-icon" class="cross" id="cross5">
+            </div>
+          </div>
+          <div class="uls" onmouseover="showCross(this)" onmouseout="hideCross(this)" id="uls6" draggable="true" ondragstart="dragStart(event)">
+            <input type="checkbox" class="circle-checkbox" id="input_6">
+            <ul class="left circle-checkbox-container">
+              <li id="check_6">Complete Todo App on Frontend Mentor</li>
+            </ul>
+            <div>
+              <img src="icon-cross.svg" alt="cross-icon" class="cross" id="cross6">
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="left circle-checkbox-container">
+            <p id="left"><span class="unchecked-count"> </span>items left</p>
+          </div>
+          <div class="center">
+            <p class="all">All</p>
+            <p class="active">Active</p> 
+            <p class="completed">Completed</p>
+          </div>
+          <div class="right">
+            <p class="clear-completed">Clear Completed</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="actives_mobile">
+      <p class="all_mobile">All</p>
+      <p class="active_mobile">Active</p> 
+      <p class="completed_mobile">Completed</p>
+    </div>
+    <div class="sub-footer">
+      <p>Drag and drop to reorder list</p>
+    </div>
+    <div class="attribution">
+      <span>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      </span>
+      <span>Coded by <a href="#">Klaus_Lynx</a>.</span>
+    </div>
+  </main>
+</body>
+</html>
