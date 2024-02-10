@@ -239,7 +239,7 @@ function createListElement() {
     left.appendChild(li);
     div.appendChild(divs);
     divs.appendChild(img);
-    img.src = 'images/icon-cross.svg';
+    img.src = 'icon-cross.svg';
 
     lists.appendChild(div);
 
